@@ -1,12 +1,15 @@
 # W03D03 HTTP Cookies & User Authentication
 
 ### To Do
-- [ ] HTTP and cookies
-- [ ] Login user with email and password
-- [ ] Encrypted cookies
-- [ ] Storing passwords ALWAYS HASH
-- [ ] HTTP Secure (HTTPS)
+- [x] HTTP and cookies
+- [x] Login user with email and password
+- [x] Encrypted cookies
+- [x] Storing passwords ALWAYS HASH
+- [x] HTTP Secure (HTTPS)
 - [ ] Server-side sessions
+
+http://localhost:6789/register
+https://www.google.com/
 
 ### HTTP
 - Protocol
@@ -23,6 +26,24 @@
 - Two-way process
 - public keys and private keys
 
+### Hash
+- one-way process
+- values are fed into a function, transformed in some way, and then returned
+- rainbow table
+
+- salts are additional information to mix with the password provided
+hash('password' + 'salt')
+
+const hash = (password) => {
+  // 'abc'
+  'aaaaaa', 'bbb', 'f'
+  return 1 + 2 + 3 === 6
+};
+
+### Do not store passwords as plaintext!!!
+
+
+- Person in the middle attack
 
 
 
