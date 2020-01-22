@@ -11,10 +11,11 @@ body {
   width: 250px;
 }
 
-.input-group {
+input {
   text-align: left;
+  width: 100%;
 }
 
-.input-group input {
-  width: 100%;
+button {
+  margin-top: 20px;
 }

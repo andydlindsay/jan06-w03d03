@@ -32,16 +32,7 @@ app.get('/register', (req, res) => {
 
 // catchall
 app.get('*', (req, res) => {
-  const userId = req.cookies && req.cookies.userId;
-  if (!userId) {
-    return res.redirect('/login');
-  }
-  const user = users[userId];
-  if (!user) {
-    return res.redirect('/register');
-  }
-  const templateVars = { user };
-  res.render('protected', templateVars);
+  res.render('protected');
 });
 
 app.listen(port, () => {
